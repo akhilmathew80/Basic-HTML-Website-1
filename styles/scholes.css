@@ -1,0 +1,321 @@
+*{
+	/* Universal reset: */
+	margin:0;
+	padding:0;
+}
+
+header,footer,
+article,section,
+hgroup,nav,
+figure{
+	/* Giving a display value to the HTML5 rendered elements: */
+	display:block;
+}
+
+body{
+	/* Setting the default text color, size, page background and a font stack: */
+	font-size:0.825em;
+	color:#b7a57a;
+	font-family:Arial, Helvetica, sans-serif;
+	background-image: url(../images/scholesbackground.jpg);
+}
+
+/* Headings: */
+
+header h1,h3{
+	font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	text-shadow:0 1px 1px black;
+}
+
+header h1{
+	/* The logo text */
+	font-size:3.5em;
+	padding:0.5em 0 0;
+	text-transform:uppercase;
+	margin-bottom: 1em;
+}
+
+header h3{
+	/* The slogan text */
+	font-family:forte,"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	font-size:2em;
+	font-weight:normal;
+	margin-top: 0;
+}
+
+header h2{
+	font-size:2.2em;
+	font-weight:normal;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+}
+
+.line{
+	/* The dividing line: */
+	height:1px;
+	background-color:#24404c;
+	border-bottom:2px solid #b7a57a;
+	margin:1em 0;
+	overflow:hidden;
+}
+
+.scholesLinks{
+    /*width: 280px;
+    float: left;
+    margin: 10px;  
+    justify-content: space-evenly;*/
+	width: 15%;
+    float: left;
+	background: #7e191b;
+    margin: 5px auto;
+	margin-right: 0;
+    border: 1px solid #b7a57a;
+    border-radius: 5px;
+	height: 520px;
+	margin-left: 0;
+}
+
+.scholesLinks a{
+	font-size: 160%;
+}
+
+.scholesProfile{
+	width: 23%;
+    float: right;
+	background: #7e191b;
+    margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 2px;
+	margin-left: 10px;
+    border: 1px solid #b7a57a;
+    border-radius: 5px;
+	height: 520px;
+	font-size: 45%;
+}
+.scholesProfile img{
+	padding: 0em;
+    border: 2px solid black;
+	width: 170px;
+	height: 170px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+article .line{
+	/* The dividing line inside of the article is darker: */
+	background-color:#b7a57a;
+	border-bottom-color:#b7a57a;
+	margin:1.3em 0;
+}
+
+.page2{
+	margin:3em 0;
+	width: 920px;
+	font-family:Arial, Helvetica, sans-serif;
+	background-color: #7e191b;
+	border: 1px solid #b7a57a;
+    border-radius: 10px;
+	height: 610px;
+	padding: 20px;
+}
+
+.page2 h2{
+	font-size: 2em;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+	border-bottom: 2px solid #b7a57a;
+	margin-bottom: 15px;
+}
+
+.scholesProfile h2{
+	margin: 15px;
+	font-family: Lucida Console;
+	margin-left: 20px;
+	color: #b7a57a;
+	border-bottom: 0;
+	font-size: 2.5em;
+}
+
+.scholesLinks h2{
+	margin:	5px;
+	margin-top: .5em;
+	color: #b7a57a;
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: bold;
+	border-bottom: 0;
+	margin-bottom: 1em;
+}
+
+.scholesLinks h3{
+	margin: 20px;
+	text-align: left;
+}
+
+.scholesLinks a{
+	text-decoration: none;
+	color: #b7a57a;
+	font-size: 1.5em;
+	margin:0.1em;
+	font-weight: normal;
+}
+.profileHeading{
+	text-align: center;
+	font-size: 2em;
+	color: #b7a57a;
+}
+
+.mailLink {
+	text-align: center;
+	font-variant: bold;
+}
+
+.mailLink a{
+	font-family: Lucida Console;
+	font-size: 1.5em;
+	color: #b7a57a;
+	font-weight: bold;
+	padding: 0 auto 0;
+	text-decoration:none;
+}
+
+.mailLink a:hover {
+	color :black;
+	text-decoration:none;
+}
+footer .line{
+	margin:2em 0;
+}
+
+nav{
+	/*background:url(../images/gradient_light.jpg) repeat-x 50% 50% #f8f8f8;*/
+	padding:0 5px;
+	position:absolute;
+	right:0;
+	top: 5em;
+	margin-bottom: 44px;
+    margin-top: 110px;
+    margin-right: 0px;
+}
+
+/* The clearfix hack to clear the floats: */
+
+.clear:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* The navigation styling: */
+
+nav ul li{
+	display:inline;
+}
+
+nav ul li a,
+nav ul li a:visited{
+	color:#b7a57a;
+	display:block;
+	float:left;
+	font-size:1.25em;
+	font-weight:bold;
+	margin:5px 2px;
+	padding:7px 10px 4px;
+	text-transform:uppercase;
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	text-decoration:none;
+	background-color:black;
+}
+
+nav, article, nav ul li a,figure{
+	/* Applying CSS3 rounded corners: */
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+/* Article styles: */
+
+#page{
+	width:960px;
+	margin:0 auto;
+	position:relative;
+}
+
+.contentsection{
+	width: 55%;
+	float: left;
+	background: #7e191b;
+    margin: 5px auto;
+	margin-left: 30px;
+	margin-right: 0px;
+    border: 1px solid #b7a57a;
+    border-radius: 5px;
+	height: 520px;
+}
+
+.contentsection iframe{
+	 width: 450px;
+	 height: 300px;	 
+	 margin-top: 10px;
+	 margin-left: auto;
+	 margin-right: auto;
+	 border: 1px solid #000000;
+	 border-radius: 5px;
+	 display: block;
+}
+
+.contentsection p{
+	line-height: 1.5;
+	text-align: justify;
+	margin: 10px;
+	color: #b7a57a;
+}
+
+.scholesLinks a:hover{
+	color: black;
+	font-style: italic;
+}
+
+footer{
+	margin-bottom:30px;
+	text-align:center;
+	font-size:0.825em;
+}
+
+footer p{
+	margin-bottom:-2.5em;
+	position:relative;
+}
+
+footer a,footer a:visited{
+	color:#cccccc;
+	background-color:#213e4a;
+	display:block;
+	padding:2px 4px;
+	z-index:100;
+	position:relative;
+}
+
+footer a:hover{
+	text-decoration:none;
+	background-color:#142830;
+}
+
+footer a.by{
+	float:left;
+
+}
+
+footer a.up{
+	float:right;
+}
